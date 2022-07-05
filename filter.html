@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      body {
+         background-size: 100%;
+         font-size: large;
+      }
+      form {
+         background-color: rgba(53, 6, 6, 0.314);
+         color: white;
+      }
+      .one {
+         width: auto;
+      }
+      .two {
+         width: 100%;
+      }
+      .but {
+         background-color: white;
+      }
+      #check:checked + .but {
+         background-color: rgb(193, 245, 193);
+      }
+      .but1 {
+         background-color: white;
+      }
+      #check1:checked + .but1 {
+         background-color: rgb(193, 245, 193);
+      }
+      .but2 {
+         background-color: white;
+      }
+      #check2:checked + .but2 {
+         background-color: rgb(193, 245, 193);
+      }
+      .non {
+         display: none;
+      }
+      .bagr {
+         width: 300px;
+      }
+      .size {
+         font-size: 15px;
+      }
+      .but3 {
+         background-color: rgb(242, 82, 9);
+      }
+   </style>
+</head>
+<body background="photo/photo-1565043666747-69f6646db940.avif">
+   <form class="bagr" action="#" method="get">
+      <div>
+         <input id="check" type="radio" name="auto" class="non" checked>
+         <button type="button" class="but size">
+            <label for="check">
+               Всі авто
+            </label>
+         </button>
+         <input id="check1" type="radio" name="auto" class="non">
+         <button type="button" class="but1 size">
+            <label for="check1">
+               Нові
+            </label>
+         </button>
+         <input id="check2" type="radio" name="auto" class="non">
+         <button type="button" class="but2 size">
+            <label for="check2">
+               Вживані
+            </label>
+         </button>
+      </div>
+      <p>
+         <strong>Тип транспорта</strong><br>
+         <select class="size" style="background-color: rgb(193, 245, 193);">
+            <option>Усі типи транспорту</option>
+            <option>Легкові</option>
+            <option>Мото</option>
+            <option>Вантажівки</option>
+            <option>Спецтехніка</option>
+         </select>
+      </p>
+      <p>
+         <strong>Регіон</strong><br>
+         <select class="size" style="background-color: rgb(193, 245, 193);">
+            <option selected>Вся Україна</option>
+            <option>Вінницька обл.</option>
+            <option>Волинська обл.</option>
+            <option>Дніпропетровька обл.</option>
+            <option>Донецька обл.</option>
+            <option>Житомирська обл.</option>
+            <option>Закарпатська обл.</option>
+            <option>Запорізька обл.</option>
+            <option>Івано-Франківська обл.</option>
+            <option>КиЇвська обл.</option>
+            <option>Кіровоградська обл.</option>
+            <option>Луганська обл.</option>
+            <option>Львівська обл.</option>
+            <option>Миколаївська обл.</option>
+            <option>Одеська обл.</option>
+            <option>Полтавська обл.</option>
+            <option>Рівненська обл.</option>
+            <option>Сумська обл.</option>
+            <option>Тернопільська обл.</option>
+            <option>Харківська обл.</option>
+            <option>Херсонська обл.</option>
+            <option>Хмельницька обл.</option>
+            <option>Черкаська обл.</option>
+            <option>Чернівецька обл.</option>
+            <option>Чернігівська обл.</option>
+         </select>
+      </p>
+      <p>
+         <strong>Тип кузова</strong><br>
+         <label>
+            <input type="checkbox" checked name="typ">
+            Всі типи
+         </label><br>
+         <label>
+            <input type="checkbox" name="typ">
+            Седан
+         </label><br>
+         <label>
+            <input type="checkbox" name="typ">
+            Кросовер
+         </label><br>
+         <label>
+            <input type="checkbox" name="typ">
+            Мінівен
+         </label><br>
+         <label>
+            <input type="checkbox" name="typ">
+            Хетчбек
+         </label><br>
+         <label>
+            <input type="checkbox" name="typ">
+            Універсал
+         </label><br>
+      </p>
+      <p>
+         <strong>Марка</strong><br>
+         <select class="size" style="background-color: rgb(193, 245, 193);">
+            <option value="">Audi</option>
+            <option value="">BMW</option>
+            <option value="">Mercedes-Benz</option>
+            <option value="">Honda</option>
+            <option value="">Ford</option>
+         </select>
+      </p>
+      <p>
+      <strong>Пальне</strong><br>
+         <label>
+            <input type="checkbox" checked name="gas">
+            Всі типи
+         </label><br>
+         <label>
+            <input type="checkbox" name="gas">
+            Бензин
+         </label><br>
+         <label>
+            <input type="checkbox" name="gas">
+            Дизель
+         </label><br>
+         <label>
+            <input type="checkbox" name="gas">
+            Газ/Бензин
+         </label><br>
+         <label>
+            <input type="checkbox" name="gas">
+            Гібрид
+         </label><br>
+         <label>
+            <input type="checkbox" name="gas">
+            Електро
+         </label><br>
+      </p>
+      <p>
+      <strong>Тип приводу</strong><br>
+         <label>
+            <input type="checkbox" checked name="type">
+            Всі типи
+         </label><br>
+         <label>
+            <input type="checkbox" name="type">
+            Передній
+         </label><br>
+         <label>
+            <input type="checkbox" name="type">
+            Задній
+         </label><br>
+         <label>
+            <input type="checkbox" name="type">
+            Повний
+         </label><br>
+      </p>
+      <p>
+      <strong>Країна виробник</strong><br>
+         <label>
+            <input type="checkbox" checked name="country">
+            Всі країни
+         </label><br>
+         <label>
+            <input type="checkbox" name="country">
+            Німеччина
+         </label><br>
+         <label>
+            <input type="checkbox" name="country">
+            Японія
+         </label><br>
+         <label>
+            <input type="checkbox" name="country">
+            США
+         </label><br>
+      </p>
+      <p>
+      <strong>Рік</strong><br>
+         <label>Від</label>
+         <select class="size">
+            <option value="">2022</option>
+            <option value="">2021</option>
+            <option value="">2020</option>
+            <option value="">2019</option>
+            <option value="">2018</option>
+            <option value="">2017</option>
+            <option value="">2016</option>
+            <option value="">2015</option>
+            <option value="">2014</option>
+            <option value="">2013</option>
+            <option value="">2012</option>
+            <option value="">2011</option>
+            <option value="">2010</option>
+            <option value="">2009</option>
+            <option value="">2008</option>
+            <option value="">2007</option>
+            <option value="">2006</option>
+            <option value="">2005</option>
+            <option value="">2004</option>
+            <option value="">2003</option>
+            <option value="">2002</option>
+            <option value="">2001</option>
+            <option value="">2000</option>
+            <option value="">1999</option>
+            <option value="">1998</option>
+            <option value="">1997</option>
+            <option value="">1996</option>
+            <option value="">1995</option>
+            <option value="">1994</option>
+            <option value="">1993</option>
+            <option value="">1992</option>
+            <option value="">1991</option>
+            <option value="" selected>1990</option>
+         </select>
+         <label>До</label>
+         <select class="size">
+            <option value="" selected>2022</option>
+            <option value="">2021</option>
+            <option value="">2020</option>
+            <option value="">2019</option>
+            <option value="">2018</option>
+            <option value="">2017</option>
+            <option value="">2016</option>
+            <option value="">2015</option>
+            <option value="">2014</option>
+            <option value="">2013</option>
+            <option value="">2012</option>
+            <option value="">2011</option>
+            <option value="">2010</option>
+            <option value="">2009</option>
+            <option value="">2008</option>
+            <option value="">2007</option>
+            <option value="">2006</option>
+            <option value="">2005</option>
+            <option value="">2004</option>
+            <option value="">2003</option>
+            <option value="">2002</option>
+            <option value="">2001</option>
+            <option value="">2000</option>
+            <option value="">1999</option>
+            <option value="">1998</option>
+            <option value="">1997</option>
+            <option value="">1996</option>
+            <option value="">1995</option>
+            <option value="">1994</option>
+            <option value="">1993</option>
+            <option value="">1992</option>
+            <option value="">1991</option>
+            <option value="">1990</option>
+         </select>
+      <p>
+      <strong>Ціна</strong><br>
+         <label>Від</label>
+         <select class="size">
+            <option>1000</option>
+            <option>2000</option>
+            <option>3000</option>
+            <option>4000</option>
+            <option>5000</option>
+            <option>6000</option>
+            <option>7000</option>
+            <option>8000</option>
+            <option>9000</option>
+            <option>10000</option>
+         </select>
+         <label>До</label>
+         <select class="size">
+            <option>1000</option>
+            <option>2000</option>
+            <option>3000</option>
+            <option>4000</option>
+            <option>5000</option>
+            <option>6000</option>
+            <option>7000</option>
+            <option>8000</option>
+            <option>9000</option>
+            <option selected>10000</option>
+         </select>
+         <select class="size">
+            <option>$</option>
+            <option>€</option>
+            <option>ГРН</option>
+         </select>
+      </p>
+      <p>
+         <input type="submit" value="Пошук" class="size but3">
+         <input type="reset" value="Очистити" class="size but3">
+      </p>
+   </form>
+</body>
+</html>
